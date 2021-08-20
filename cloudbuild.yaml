@@ -1,0 +1,5 @@
+steps:
+  - id: 'Deploy SQL App to App Engine'
+    name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
+    entrypoint: 'bash'
+    args: ['-c', 'gcloud app deploy --version=app-java app.yaml']
